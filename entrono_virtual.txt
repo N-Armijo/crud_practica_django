@@ -1,0 +1,25 @@
+para todos
+python -m venv mi_entorno
+
+bash
+source mi_entorno/Scripts/activate
+
+cmd
+mi_entorno\Scripts\activate
+
+powershell
+
+#activar permisos de ejecucion de scripts
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+./mi_entorno/Scripts/acivate
+
+########Todas se desactivan con deactivate
+
+No olvidar python manage.py makemigrations y luego migrate
+
+pip freeze
+pip freeze>requerimientos.txt
+pip install -r requerimientos.txt
+pip uninstall -r requerimientos.txt -y
